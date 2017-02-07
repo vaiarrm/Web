@@ -1,7 +1,7 @@
 # Web
-This folder has a list of projects which I made while learning Web technologies
-Project1: SimpleQuizProjext
-  a. HTML5
-  b. CSS
-  c. JavaScript
-Project2:   
+This folder has a list of projects which I made while learning Web technologies\n
+Project1: SimpleQuizProjext\n
+  a. HTML5\n
+  b. CSS\n
+  c. JavaScript\n
+Project2:\n
