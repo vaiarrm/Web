@@ -17,12 +17,22 @@ function submitAnswers(){
     //     alert("You Missed question 1")
     //     return;
     // }
+    var e = false;
     for( i = 1; i <= total ; i++){
         if(eval('q'+i) == null || eval('q'+i) == ""){
-            alert("You Missed question" + i);
-            return false;
+            e = true;
+            //alert("Please answer Question" + i );
+            //var s = eval("q"+i+"Error");
+            //alert(s);
+            var x = document.getElementById("q"+i+"Error");
+            x.innerHTML= "<h3>You forgot to answer this question</h3>";
+            //return false;
+        }else{
+            var x = document.getElementById("q"+i+"Error");
+            x.innerHTML= "";
         }
     }
+    if (e) return false;
     // Correct Anwers
     var ans = ["a","b","b","d","a"];
     for(  i = 1; i <= total ; i++){
@@ -35,6 +45,6 @@ function submitAnswers(){
     var results = document.getElementById("results");
     results.innerHTML="<h3> You Scored <span>" + score + "</span> out of <span>" +total+"</span></h3>";
     document.getElementById("quizForm").reset();
-    //return true;
+    return false;
 
 }
